@@ -3366,9 +3366,9 @@
 		padding: 13em 0 11em 0;
 		background-color: #0c0c0c;
 		background-image: url("../../images/banner.jpg");
-		background-size: cover;
+		background-size: contain;
 		background-repeat: no-repeat;
-		background-position: bottom;
+		background-position: left;
 		text-align: left;
 		position: relative;
 		z-index: 9999;
