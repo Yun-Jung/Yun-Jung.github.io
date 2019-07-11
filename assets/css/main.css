@@ -3368,7 +3368,7 @@
 		background-image: url("../../images/banner.jpg");
 		background-size: contain;
 		background-repeat: no-repeat;
-		background-position: left;
+		background-position: auto;
 		text-align: left;
 		position: relative;
 		z-index: 9999;
