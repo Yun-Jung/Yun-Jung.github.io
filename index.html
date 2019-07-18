@@ -26,6 +26,11 @@
         var myLandbot = new LandbotLivechat({
           index: 'https://landbot.io/u/H-218922-QSEJ4IMJTY0HG6F2/index.html',
         });
+      </script><script>
+        // Show a proactive message on landbot load
+        myLandbot.on('landbot-load', () => {
+          myLandbot.sendProactive("Hello! Welcome to Yun-Jung's Personal Website.");
+        });
       </script>
       <!--================Header Menu Area =================-->
         <header class="header_area">
