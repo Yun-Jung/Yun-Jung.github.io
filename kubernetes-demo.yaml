@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: posenet-demo
+spec:
+  containers:
+  - name: posenet-demo-simplepose
+    image: yjungku/posenet-demo ### not sure ###
+  nodeSelector:
+    k3s.io/tpu: true
