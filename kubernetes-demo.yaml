@@ -7,4 +7,4 @@ spec:
   - name: posenet-demo-simplepose
     image: yjungku/posenet-demo ### not sure ###
   nodeSelector:
-    k3s.io/tpu: true
+    k3s.io/tpu: "true"
