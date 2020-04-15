@@ -9,4 +9,4 @@ spec:
     ports:
     - containerPort: 80
   nodeSelector:
-    k3s.io/tpu: true
+    k3s.io/tpu: "true"
