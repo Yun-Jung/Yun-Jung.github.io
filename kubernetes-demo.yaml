@@ -1,26 +1,12 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  name: nginx-deployment
-  labels:
-    k8s-app: nginx
+  name: posenet-demo
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      k8s-app: nginx
-  template:
-    metadata:
-      labels:
-        k8s-app: nginx
-    spec:
-      containers:
-      - image: nginx
-        name: nginx-pod
-        resources:
-          limits:
-            cpu: 1
-            memory: 4Gi
-          requests:
-            cpu: 100m
-            memory: 500Mi
+  containers:
+  - name: posenet-demo-simplepose
+    image: yjungku/posenet-demo ### not sure ###
+    ports:
+    - containerPort: 80
+  nodeSelector:
+    k3s.io/tpu: "true"
