@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: posenet-demo-simplepose
-    image: yjungku/posenet-demo ### not sure ###
+    image: doijanky/hello-world
     ports:
     - containerPort: 80
   nodeSelector:
