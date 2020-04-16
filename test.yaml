@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: helloworld-demo
-    image: helloworld
+    image: hello-world
     ports:
     - containerPort: 80
   nodeSelector:
