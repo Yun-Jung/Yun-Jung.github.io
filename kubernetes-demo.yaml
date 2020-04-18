@@ -1,12 +1,21 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: posenet-demo
 spec:
-  containers:
-  - name: posenet-demo-simplepose
-    image: yjungku/posenet-demo ### not sure ###
-    ports:
-    - containerPort: 80
-  nodeSelector:
-    k3s.io/tpu: "true"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: simplepose-demo
+    spec:
+      containers:
+        - name: posenet-demo-simplepose
+          image: yjungku/posenet-demo
+          ports:
+            - containerPort: 80
+        nodeSelector:
+          k3s.io/tpu: "true"
+  selector:
+    matchLabels:
+      app: simplepose-demo
