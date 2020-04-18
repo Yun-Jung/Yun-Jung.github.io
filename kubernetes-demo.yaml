@@ -13,7 +13,7 @@ spec:
         - name: posenet-demo-simplepose
           image: yjungku/posenet-demo
           ports:
-          - containerPort: 80
+            - containerPort: 80
         nodeSelector:
           k3s.io/tpu: "true"
   selector:
