@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: posenet-demo-simplepose
-        image: yjungku/posenet-demo
+        image: gitlab-registry.nautilus.optiputer.net/yjungku/posenet-demo:latest
         ports:
         - containerPort: 80
       nodeSelector:
